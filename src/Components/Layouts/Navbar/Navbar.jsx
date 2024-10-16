@@ -1,8 +1,11 @@
 import React from "react";
+import NavbarList from "../../Elements/NavbarList/NavbarList";
 
-const Navbar = () => {
+const Navbar = (styling) => {
     return (
-        <div></div>
+        <nav className={`w-full p-5`}>
+            <NavbarList />
+        </nav>
     )
 }
 
