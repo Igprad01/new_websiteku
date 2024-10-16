@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from './../Components/Layouts/Navbar/Navbar';
 
 
 const Template = () => {
     return (
-        <h1 className="underline">hello world</h1>
+        <body>
+            <Navbar />
+        </body>
     )
 }
 
