@@ -2,12 +2,12 @@ import React from "react";
 
 
 const NavbarList = () => {
-    const List = ['home',]
+    const List = ['Home','About','Project','Certification'];
     return (
-        <ul>
-            {List.map((list) => {
-                <a href="">{list}</a>
-            })}
+        <ul className={`flex justify-end`}>
+            {List.map((list) => (
+                <a href="#">{list}</a>
+            ))}
         </ul>
     )
 }
