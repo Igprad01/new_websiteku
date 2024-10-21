@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import NavbarList from "../../Elements/NavbarList/NavbarList";
-import Heading1 from "../../Elements/Heading1/Heading1";
 
 const Navbar = () => {
     const [Open,SetOpen] = useState(false);
@@ -9,15 +8,11 @@ const Navbar = () => {
         SetOpen(!Open);
     };
     return (
-        <nav className={`w-full p-10 bg-slate-600 text-white`}>
-            <div className={`container mx-auto text-2xl`}>
-                <div className={`hidden justify-between md:flex items-end space-x-5`}>
-                <Heading1 Text = "ini adalah teks"/>
+        <nav className={`relative flex justify-center items-center text-black my-12`}>
+            <div className={`hidden md:flex bg-gray-300 rounded-full shadow-lg px-10 py-5 pl-28`}>
                 <NavbarList />
-                </div>
             </div>
-            <div className={`justify-between md:hidden flex items-end`}>
-                <Heading1 Text= "ini adalah teks" />
+            <div className={`md:hidden flex justify-end items-end w-full pr-6`}>
            <button onClick={hamburger}>
            <svg viewBox="0 0 100 80" width="20" height="20">
                 <rect width="100" height="20" ></rect>
@@ -27,7 +22,7 @@ const Navbar = () => {
            </button>
             </div>
             {Open && (
-                <div>
+                <div className={`absolute top-16 left-0 right-0 md:hidden bg-slate-50 py-4 px-6 w-full text-center`}>
                     <NavbarList />
                 </div>
             )}
