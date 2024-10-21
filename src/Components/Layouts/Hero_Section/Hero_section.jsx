@@ -1,8 +1,13 @@
 import React from "react";
+import Heading1 from "../../Elements/Heading1/Heading1";
+import Heading2 from "../../Elements/Heading2/Heading2";
 
 const HeroSection= () => {
     return (
-        <h1 className={`text-black`}>hello world</h1>
+        <div className={`container relative mx-60 my-20 flex justify-between`}>
+            <Heading1 Text = 'ini adalah text' />
+            <Heading2 Text = 'ini adalah heading2' />
+        </div>
     )
 }
 
