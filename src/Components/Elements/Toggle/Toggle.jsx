@@ -10,7 +10,7 @@ const Toggle = () => {
     };
 
     return (
-        <button className={`btn btn-square `} onClick={handle}>
+        <button className={`btn btn-square bg-white hover:bg-white`} onClick={handle}>
             {isDarkMode ? ( <FontAwesomeIcon icon={faMoon} size="lg" />):(
                 <FontAwesomeIcon icon={faSun} size="lg" />
             )}

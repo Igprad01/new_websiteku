@@ -1,8 +1,8 @@
 import React from "react";
 
-const Kalimat = ({teks}) => {
+const Kalimat = ({teks, Styling}) => {
     return (
-        <p>{teks}</p>
+        <p className={`${Styling}`}>{teks}</p>
     )
 }
 
