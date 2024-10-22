@@ -23,9 +23,10 @@ const Navbar = () => {
             </button>
         </div>
         {Open && (
-            <div className="absolute top-20 right-5 left-5 bg-white px-5 py-5 items-center rounded-lg md:hidden">
-                <NavbarList styling={`flex flex-col justify-start space-y-3 text-lg sm:text-xl`} />
-            </div>        
+           <div className="absolute top-20 right-10 left-5 overflow-visible bg-white px-5 py-5 items-center rounded-lg md:hidden z-10">
+           <NavbarList styling={`flex flex-col justify-start space-y-3 text-lg sm:text-xl`} />
+         </div>
+                 
         )}
         {/* <div className="absolute right-32">
             <Toggle />
