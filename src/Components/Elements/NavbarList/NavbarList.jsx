@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const NavbarList = () => {
+const NavbarList = ({styling}) => {
     const List = ['Home','About','Project','Certification'];
     return (
-        <ul className={`flex justify-end mr-10`}>
+        <ul className={`mr-10 ${styling}`}>
             {List.map((list) => (
-                <a href="#" className={`mr-10`}>{list}</a>
+                <a href="#" className={`mr-10 hover:text-white delay-100`}>{list}</a>
             ))}
         </ul>
     )
