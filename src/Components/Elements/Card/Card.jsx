@@ -1,14 +1,16 @@
 import React from "react";
 import Heading1 from "../Heading1/Heading1";
 import Kalimat from "../Paragraph/Paragraph";
+import Image from "../../image/Image";
 
-const Card = ({Teks,Title,bg}) => {
+const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat}) => {
     
     return (
-        <div className={`border box-border py-10 px-10 bg-slate-600`}>
-            <div className={``}>
-            <Heading1 Text={Title} />
-            <Kalimat teks={Teks} />
+        <div className={`border box-border px-3 py-3 bg-transparent`}>
+            <div className={`mx-auto`}>
+            <Heading1 Text={Title} Styling={styleHeading} />
+            <Image src={Imgsrc} alt={Ket} styleImg={styleImage}/>
+            <Kalimat teks={Teks} Styling={StyleKalimat}/>
             </div>
         </div>
     )
