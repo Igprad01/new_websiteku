@@ -1,7 +1,6 @@
 import React from "react";
 import Heading1 from "../../Elements/Heading1/Heading1";
 import Kalimat from "../../Elements/Paragraph/Paragraph";
-import Heading2 from "../../Elements/Heading2/Heading2";
 
 const About= () => {
 
@@ -10,12 +9,7 @@ const About= () => {
             <Heading1 Text={'About Me'} Styling = {`text-center mb-10 text-xl capitalize sm:text-2xl md:text-4xl lg:text-6xl`} />
             <div className={`text-justify border border-white p-4 sm:px-4 md:px-8 lg:px-10`}>
                 <div className={`"px-2 py-2 sm:px-4 md:px-6 lg:px-6">`}>
-                <Heading2 Text={'Tentang saya'} Styling={`mb-2`}/>
-                <Kalimat teks = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/> 
-                </div>
-                <div className={`"px-2 py-2 sm:px-4 md:px-6 lg:px-6">`}>
-                <Heading2 Text={'why it programming'} Styling={`mt-5`}/>
-                <Kalimat teks = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/> 
+                <Kalimat teks = 'saya adalah seorang pengembang Website yang berfocus pada Front End React JS menciptakan antarmuka website interaktif dan responsif dalam membangun berbagai website, kini saya mendedikasikan keahlian saya untuk membangun aplikasi front-end yang statis menggunakan React JS. Diluar hal itu saya menjalani hobby pada dunia Fotografi khususnya transportasi Bus dan Kereta Api serta menikmati perjalanan menggunakan transportasi Bus dan Kereta Api' Styling={`text-lg sm:text-xl md:text-1xl lg:text-2xl`}/> 
                 </div>
             </div>
         </div>
