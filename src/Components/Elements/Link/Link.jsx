@@ -1,7 +1,9 @@
 import React from "react";
 
-const link = () => {
+const Link = ({Href,ContentLink}) => {
     return (
-        <a href=""></a>
+        <a href={Href}>{ContentLink}</a>
     )
 }
+
+export default Link
