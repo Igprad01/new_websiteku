@@ -2,6 +2,7 @@
 import React from "react";
 import Card from "../../Elements/Card/Card";
 import Heading1 from "../../Elements/Heading1/Heading1";
+import Button from "../../Elements/Button/Button";
 
 const Section_Project = () => {
     const card = [
