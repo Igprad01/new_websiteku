@@ -3,7 +3,7 @@ import Heading1 from "../Heading1/Heading1";
 import Kalimat from "../Paragraph/Paragraph";
 import Image from "../../image/Image";
 
-const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat}) => {
+const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat, ButtonText,styleButton}) => {
     
     return (
         <div className={`border box-border px-3 py-3 bg-transparent`}>

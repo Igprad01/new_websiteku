@@ -1,7 +1,6 @@
 import React from "react";
 import Heading1 from "../../Elements/Heading1/Heading1";
 import Heading2 from "../../Elements/Heading2/Heading2";
-import Kalimat from "../../Elements/Paragraph/Paragraph";
 import ExternalLink from "../../Elements/ExternalLink/Link";
 
 const Footer = () =>{

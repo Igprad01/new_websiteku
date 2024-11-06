@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Heading1 from "../../Elements/Heading1/Heading1";
 import Kalimat from "../../Elements/Paragraph/Paragraph";
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 const About= () => {
 
+    useEffect(() => {
+        Aos.init({duration:2000});
+    })
+
     return (
-        <div className={`container mx-auto my-40 px-6 sm:px-6 md:px-10 lg:px-12`}>
+        <div data-aos="fade-up" className={`container mx-auto my-40 px-6 sm:px-6 md:px-10 lg:px-12`}>
             <Heading1 Text={'About Me'} Styling = {`text-center mb-10 text-xl capitalize sm:text-2xl md:text-4xl lg:text-6xl`} />
             <div className={`text-start border p-4 sm:text-justify px-4 md:px-8 lg:px-10`}>
                 <div className={`"px-2 py-2 sm:px-4 md:px-6 lg:px-6">`}>
