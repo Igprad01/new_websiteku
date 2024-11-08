@@ -10,10 +10,10 @@ const Section_Project = () => {
         Aos.init({duration:2000});
     })
     const card = [
-        {id:1, title:'Portofolio Old', teks:'Project website pertama yang terdiri dari Skills dan beberapa project lama pada website tersebut', img:'src/image/newPortofolio.png'},
-        {id:2, title:'Ucapan Hari Raya Idul Fitri', teks:'Sebuah Project yang dibuat untuk mengucapkan Selamat Hari Raya Idul Fitri, pada website tersebut terdapat beberapa fitur button yang langsung mengarah ke dana kaget, user yang mengakses nya mendapatkan gift THR dari website ini',img:'src/image/idulFitri.png'},
-        {id:3, title:'Website Film ', teks:'website film random dengan menggunakan API free film, beberapa fitur masih coming soon yang nantinya update lagi', img:'src/image/MoviesWeb.png'},
-        {id:4, title:'Auto Random Color', teks:'project random dengan melihat warna warni pada box yang sudah disediakan', img:'/src/assets/img/randomColor.png'},
+        {id:1, title:'Portofolio Old', teks:'Project website pertama yang terdiri dari Skills dan beberapa project lama pada website tersebut', img:'/static/img/newPortofolio.png'},
+        {id:2, title:'Ucapan Hari Raya Idul Fitri', teks:'Sebuah Project yang dibuat untuk mengucapkan Selamat Hari Raya Idul Fitri, pada website tersebut terdapat beberapa fitur button yang langsung mengarah ke dana kaget, user yang mengakses nya mendapatkan gift THR dari website ini',img:'static/img/idulFitri.png'},
+        {id:3, title:'Website Film ', teks:'website film random dengan menggunakan API free film, beberapa fitur masih coming soon yang nantinya update lagi', img:'static/img/MoviesWeb.png'},
+        {id:4, title:'Auto Random Color', teks:'project random dengan melihat warna warni pada box yang sudah disediakan', img:'static/img/randomColor.png'},
     ]
 
     return (
