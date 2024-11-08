@@ -15,7 +15,7 @@ const Footer = () =>{
             <div className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`}>
                 <Heading1 Text={`Mau nongki Hingga Berdiskusi ide seru? atau membicarakan terkait sesuatu yang lain?`} Styling={`text-3xl sm:text-6xl md:text-7xl lg:text-7xl`} />
                 <div className={`my-12 mx-auto`}>
-                    <Image src={`/public/img/marin.png`} styleImg={`w-60 rounded-full`}/>
+                    <Image src={`/img/marin.png`} styleImg={`w-60 rounded-full`}/>
                     <Heading2 Text={'Contact Me'} Styling={`text-2xl mt-5 ml-4 sm:text-4xl lg:text-5xl`}/>
                     <div className={`flex flex-col text-center mt-5`}>
                     <div className={`flex flex-row gap-5`}>
