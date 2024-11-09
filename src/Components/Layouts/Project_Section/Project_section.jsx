@@ -17,7 +17,7 @@ const Section_Project = () => {
     ]
 
     return (
-        <div data-aos="fade-up" className={`container mx-auto px-4 py-8  sm:px-6 lg:px-8`}>
+        <div data-aos="fade-up" className={`container mx-auto px-4 py-8  sm:px-6 lg:px-8`} id="project">
             <Heading1 Text={`Project`} Styling={`text-center text-xl capitalize mb-10 sm:text-2xl md:text-4xl lg:text-6xl`}/>
             <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 `}>
                 {card.map((card)=>(

@@ -18,7 +18,7 @@ const Sertifikat = () => {
     })
 
     return (
-        <div data-aos="fade-up" className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`}>
+        <div data-aos="fade-up" className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`} id="sertifikasi">
            <Heading1 Text={`Certification`} Styling={`text-center text-xl mb-10 capitalize sm:text-2xl md:text-4xl lg:text-6xl`}/>
             <div className={`grid grid-cols-1 gap-7`}>
                 {Kartu.map((card)=>(
