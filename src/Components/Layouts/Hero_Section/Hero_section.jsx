@@ -24,10 +24,10 @@ const HeroSection= () => {
     return (
         <div data-aos="fade-up" className={`container mx-auto px-4 sm:px-6 lg:px-8 py-8`} id="home">
             <div>
-            <Heading1 Text = 'putra pradwi.' Styling={`font-bold text-3xl mb-10 capitalize sm:text-4xl lg:text-6xl mb-6`} />
-            <Heading2 Text = {TextRunning[textIndex]} Styling={`font-bold capitalize text-xl mb-10 sm:text-2xl lg:text-7xl mb-7`} />
+            <Heading1 Text = 'putra pradwi.' Styling={`font-bold text-3xl mb-10 capitalize sm:text-4xl lg:text-5xl mb-6`} />
+            <Heading2 Text = {TextRunning[textIndex]} Styling={`font-bold capitalize text-xl mb-10 sm:text-2xl lg:text-6xl mb-7`} />
           <div>
-          <Kalimat teks = '2 tahun berpengalaman dalam dunia programming, dimulai dengan PHP untuk membangun website dinamis, lalu beralih ke C++ guna mempelajari dasar-dasar pemrograman. Saat ini sedang fokus pada React JS, khususnya dalam pengembangan website front-end' Styling={`font-italic text-xl text-justify sm:text-2xl text-start lg:text-3xl`}/>
+          <Kalimat teks = '2 tahun berpengalaman dalam dunia programming, dimulai dengan PHP untuk membangun website dinamis, lalu beralih ke C++ guna mempelajari dasar-dasar pemrograman. Saat ini sedang fokus pada React JS, khususnya dalam pengembangan website front-end' Styling={`font-italic text-xl text-justify sm:text-xl text-start lg:text-2xl`}/>
          </div>
             </div>
         </div>
