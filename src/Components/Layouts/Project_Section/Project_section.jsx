@@ -21,7 +21,7 @@ const Section_Project = () => {
             <Heading1 Text={`Project`} Styling={`text-center text-xl capitalize mb-10 sm:text-2xl md:text-4xl lg:text-6xl`}/>
             <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 `}>
                 {card.map((card)=>(
-                    <Card key={card.id} Title={card.title} Teks={card.teks} Imgsrc={card.img} styleImage={`w-3/4 mx-auto rounded-xl`} styleHeading={`font-bold text-xl mx-15 mb-5 text-center`} StyleKalimat={`mt-5 mx-0 text-lg sm:mx-20 text-justify text-xl md:text-2xl`} />
+                    <Card key={card.id} Title={card.title} Teks={card.teks} Imgsrc={card.img} styleImage={`w-3/4 mx-auto rounded-xl`} styleHeading={`font-bold text-xl mx-15 mb-5 text-center`} StyleKalimat={`mt-5 mx-0 text-lg sm:mx-20 text-xl md:text-2xl`} />
                 ))}
             </div>
         </div>
