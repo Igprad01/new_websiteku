@@ -4,6 +4,7 @@ import Kalimat from "../Paragraph/Paragraph";
 import Image from "../../image/Image";
 
 const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat,styleButton, textbutton}) => {
+
     
     return (
         <div className={`border box-border px-3 py-3 bg-transparent`}>

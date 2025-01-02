@@ -6,10 +6,10 @@ import "aos/dist/aos.css"
 
 const Sertifikat = () => {
     const Kartu = [
-        {id:1, judul:'Data Analysis', kalimat:'Sertifikasi Penyelesaian Course FreeCodeCamp Data Analysis With Python'},
-        {id:2, judul:'Data Analysis - Python Introduction', kalimat:'Sertifikasi Penyelesaian Course Data Analysis With Python DQLab Free Class'},
-        {id:3, judul:'SQL Fundamental for Data Science', kalimat:'Sertifikasi penyelesaian Course SQL DQLab Free Class'},
-        {id:4, judul:'Microsoft Excel Pivot Table', kalimat:'Sertifikasi Penyelesaian Course Excel pivot Table Myskill Id'}
+        {id:1, judul:'Data Analysis', kalimat:'Sertifikasi Penyelesaian Course FreeCodeCamp Data Analysis With Python', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
+        {id:2, judul:'Data Analysis - Python Introduction', kalimat:'Sertifikasi Penyelesaian Course Data Analysis With Python DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
+        {id:3, judul:'SQL Fundamental for Data Science', kalimat:'Sertifikasi penyelesaian Course SQL DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
+        {id:4, judul:'Microsoft Excel Pivot Table', kalimat:'Sertifikasi Penyelesaian Course Excel pivot Table Myskill Id', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'}
 
     ]
 
@@ -22,7 +22,7 @@ const Sertifikat = () => {
            <Heading1 Text={`Certification`} Styling={`text-center text-xl mb-10 capitalize sm:text-2xl md:text-4xl lg:text-6xl`}/>
             <div className={`grid grid-cols-1 gap-7`}>
                 {Kartu.map((card)=>(
-                    <Card key={card.id} Title={card.judul} Teks={card.kalimat} styleHeading={`text-3xl`} StyleKalimat={`text-2xl`} />
+                    <Card key={card.id} Title={card.judul} Teks={card.kalimat} styleHeading={`text-3xl`} StyleKalimat={`text-2xl`} styleButton={card.buttonstyle} textbutton={card.kalimatButton}  />
                 ))}
             </div>
         </div>

@@ -10,10 +10,10 @@ const Section_Project = () => {
         Aos.init({duration:2000});
     })
     const card = [
-        {id:1, title:'Portofolio Old', teks:'Project website pertama yang terdiri dari Skills dan beberapa project lama pada website tersebut', img:'/img/newPortofolio.png', stylingklik:'btn btn-primary text-base my-24 mx-32 md:btn-md lg:btn-lg lg:mx-64', kalimatButton:'click Here'},
-        {id:2, title:'Ucapan Hari Raya Idul Fitri', teks:'Sebuah Project yang dibuat untuk mengucapkan Selamat Hari Raya Idul Fitri, pada website tersebut terdapat beberapa fitur button yang langsung mengarah ke dana kaget, user yang mengakses nya mendapatkan gift THR dari website ini',img:'/img/idulFitri.png', stylingklik:'btn btn-primary text-base my-5 mx-32 md:btn-md lg:btn-lg lg:mx-64', kalimatButton:'Click Here'},
-        {id:3, title:'Website Film ', teks:'website film random dengan menggunakan API free film, beberapa fitur masih coming soon yang nantinya update lagi', img:'/img/MoviesWeb.png', stylingklik:'btn btn-primary text-base my-10 mx-32 md:btn-md lg:btn-lg lg:mx-64', kalimatButton:'Click here'},
-        {id:4, title:'Auto Random Color', teks:'project random dengan melihat warna warni pada box yang sudah disediakan', img:'/img/randomColor.png', stylingklik:'btn btn-primary text-base my-16 mx-32 md:btn-md lg:btn-lg lg:mx-64 ', kalimatButton:'Click Here'},
+        {id:1, title:'Portofolio Old', teks:'Project website pertama yang terdiri dari Skills dan beberapa project lama pada website tersebut', img:'/img/newPortofolio.png', stylingklik:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl lg:mx-64 lg:my-32', kalimatButton:'click Here'},
+        {id:2, title:'Ucapan Hari Raya Idul Fitri', teks:'Sebuah Project yang dibuat untuk mengucapkan Selamat Hari Raya Idul Fitri, pada website tersebut terdapat beberapa fitur button yang langsung mengarah ke dana kaget, user yang mengakses nya mendapatkan gift THR dari website ini',img:'/img/idulFitri.png', stylingklik:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  lg:mx-64 lg:my-10', kalimatButton:'Click Here'},
+        {id:3, title:'Website Film ', teks:'website film random dengan menggunakan API free film, beberapa fitur masih coming soon yang nantinya update lagi', img:'/img/MoviesWeb.png', stylingklik:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  lg:mx-64 lg:my-10', kalimatButton:'Click here'},
+        {id:4, title:'Auto Random Color', teks:'project random dengan melihat warna warni pada box yang sudah disediakan', img:'/img/randomColor.png', stylingklik:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  lg:mx-64 lg:my-16 ', kalimatButton:'Click Here'},
     ]
 
     return (
