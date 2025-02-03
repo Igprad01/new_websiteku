@@ -12,7 +12,9 @@ const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat,sty
             <Heading1 Text={Title} Styling={styleHeading} />
             <Image src={Imgsrc} alt={Ket} styleImg={styleImage}/>
             <Kalimat teks={Teks} Styling={StyleKalimat}/>
+            <a href="#">
             <button className={`${styleButton}`}>{textbutton}</button>
+            </a>
             </div>
         </div>
     )

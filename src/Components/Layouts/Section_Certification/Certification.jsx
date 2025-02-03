@@ -6,10 +6,10 @@ import "aos/dist/aos.css"
 
 const Sertifikat = () => {
     const Kartu = [
-        {id:1, judul:'Data Analysis', kalimat:'Sertifikasi Penyelesaian Course FreeCodeCamp Data Analysis With Python', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
-        {id:2, judul:'Data Analysis - Python Introduction', kalimat:'Sertifikasi Penyelesaian Course Data Analysis With Python DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
-        {id:3, judul:'SQL Fundamental for Data Science', kalimat:'Sertifikasi penyelesaian Course SQL DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'},
-        {id:4, judul:'Microsoft Excel Pivot Table', kalimat:'Sertifikasi Penyelesaian Course Excel pivot Table Myskill Id', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ', kalimatButton:'ini adalah button'}
+        {id:1, judul:'Data Analysis', kalimat:'Sertifikasi Penyelesaian Course FreeCodeCamp Data Analysis With Python', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl mt-5', kalimatButton:'Click Here'},
+        {id:2, judul:'Data Analysis - Python Introduction', kalimat:'Sertifikasi Penyelesaian Course Data Analysis With Python DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl mt-5', kalimatButton:'Click Here'},
+        {id:3, judul:'SQL Fundamental for Data Science', kalimat:'Sertifikasi penyelesaian Course SQL DQLab Free Class', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-x mt-5', kalimatButton:'CLick Here'},
+        {id:4, judul:'Microsoft Excel Pivot Table', kalimat:'Sertifikasi Penyelesaian Course Excel pivot Table Myskill Id', buttonstyle:'btn btn-outline btn-primary sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl mt-5', kalimatButton:'Click Here'}
 
     ]
 
