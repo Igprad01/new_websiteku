@@ -6,7 +6,8 @@ const NavbarList = ({styling}) => {
         {name: 'Home', link:'#home'},
         {name: 'About', link:'#about'},
         {name: 'Project', link:'#project'},
-        {name: 'Certification', link:'#sertifikasi'}
+        {name: 'Certification', link:'#sertifikasi'},
+        {name: 'Skill', link:'#skill'}
     ]
     return (
         <ul className={`mr-10 ${styling}`}>
