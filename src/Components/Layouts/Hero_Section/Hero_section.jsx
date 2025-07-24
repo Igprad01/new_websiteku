@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const HeroSection= () => {
-    const TextRunning = ['front end developer', 'data engineer']
+    const TextRunning = ['front end developer', 'Data entry']
     const [textIndex, setTextIndex] = useState(0)
 
     useEffect(() => {
