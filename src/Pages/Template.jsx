@@ -10,6 +10,7 @@ import Sertifikat from './../Components/Layouts/Section_Certification/Certificat
 import Footer from "../Components/Layouts/Footer/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Skill from '../Components/Layouts/Section_skill/Skill';
 
 const Template = () => (
 
@@ -19,6 +20,7 @@ const Template = () => (
         <About />
         <Section_Project />
         <Sertifikat />
+        <Skill />
         <Footer />
     </body>
 )
