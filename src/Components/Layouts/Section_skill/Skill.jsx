@@ -13,6 +13,7 @@ const skill = () => {
         {id:5, img:'/Logo/sheet.png'},
         {id:6, img:'/Logo/looker-studio.png'},
         {id:7, img:'/Logo/SQL.png'},
+        {id:8, img:'/Logo/Vue.js.png'},
     ]
 
     return (
