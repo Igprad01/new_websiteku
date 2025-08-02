@@ -27,7 +27,7 @@ const HeroSection= () => {
             <Heading1 Text = 'putra pradwi.' Styling={`font-bold text-3xl mb-10 capitalize sm:text-4xl lg:text-5xl mb-6`} />
             <Heading2 Text = {TextRunning[textIndex]} Styling={`font-bold capitalize text-xl mb-10 sm:text-2xl lg:text-6xl mb-7`} />
           <div>
-          <Kalimat teks = '2 tahun berpengalaman dalam dunia programming, dimulai dengan PHP untuk membangun website dinamis, lalu beralih ke C++ guna mempelajari dasar-dasar pemrograman. Saat ini sedang fokus pada React JS, khususnya dalam pengembangan website front-end' Styling={`font-italic text-xl text-justify sm:text-xl text-start lg:text-2xl`}/>
+          <Kalimat teks = 'Berpengalaman 2 tahun di dunia programming, mulai dari pengembangan website dinamis dengan PHP hingga berfokus pada Vue JS. Terbiasa dengan data entry dan administrasi menggunakan Microsoft Excel, Google Workspace, Python dan mampu bekerja kolaboratif, serta siap berkembang dalam dunia teknologi ' Styling={`font-italic text-xl text-justify sm:text-xl text-start lg:text-2xl`}/>
          </div>
             </div>
         </div>
