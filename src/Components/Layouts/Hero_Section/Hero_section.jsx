@@ -34,10 +34,10 @@ const HeroSection= () => {
                     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} />
                     </a>
                     <a href="https://x.com/IPradwi" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} />
                     </a>
                     <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer">
-                    <img src="#" alt="Github" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Github" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
                     </a>
                     </div>       
             </div>

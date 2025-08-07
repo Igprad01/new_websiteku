@@ -13,7 +13,8 @@ const Footer = () =>{
             <div className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`}>
                 <Heading1 Text={`Mau nongki Hingga Berdiskusi ide seru? atau membicarakan terkait sesuatu yang lain?`} Styling={`text-3xl sm:text-6xl md:text-7xl lg:text-6xl`} />
                 <div className={`my-12 mx-auto`}>
-                    <Image src={`/img/fotoProfile.jpg`} styleImg={`w-60 rounded-full`}/> 
+                    <Image src={`/img/fotoProfile.jpg`} styleImg={`w-60 rounded-full`}/>
+ 
                 </div>
                 </div>
         </footer>
@@ -21,3 +22,5 @@ const Footer = () =>{
 }
 
 export default Footer
+
+// nanti dikembangin lagi mengenai footer.
