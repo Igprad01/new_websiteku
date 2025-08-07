@@ -29,6 +29,17 @@ const HeroSection= () => {
           <div>
           <Kalimat teks = 'Berpengalaman 2 tahun di dunia programming, mulai dari pengembangan website dinamis dengan PHP hingga berfokus pada Vue JS. Terbiasa dengan data entry dan administrasi menggunakan Microsoft Excel, Google Workspace, Python dan mampu bekerja kolaboratif, serta siap berkembang dalam dunia teknologi ' Styling={`font-italic text-xl text-justify sm:text-xl text-start lg:text-2xl`}/>
          </div>
+         <div className={`flex flex-row text-center mt-5 gap-5`}>
+                    <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} />
+                    </a>
+                    <a href="https://x.com/IPradwi" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    </a>
+                    <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer">
+                    <img src="#" alt="Github" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    </a>
+                    </div>       
             </div>
         </div>
     )
