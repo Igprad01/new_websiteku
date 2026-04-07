@@ -27,11 +27,9 @@ const Footer = () => {
                 </a>
 
                 <div className="flex flex-col items-center border-t border-slate-800 w-full pt-8">
-                    <h3 className="font-semibold text-lg text-slate-200 uppercase tracking-wider mb-6">Terhubung</h3>
                     <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm sm:text-base">
                         <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
                         <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a>
-                        <a href="https://instagram.com/putrapradwi" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">Instagram</a>
                     </div>
                 
                     <p className="text-slate-500 text-xs sm:text-sm">
