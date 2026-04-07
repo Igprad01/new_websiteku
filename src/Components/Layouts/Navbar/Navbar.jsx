@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";   
 import NavbarList from "../../Elements/NavbarList/NavbarList";
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
         SetOpen(!Open);
     };
     return (
-        <nav className={`sticky top-10 z-50 flex justify-center items-center text-black my-12 text-2xl`}>
+        <nav className={`sticky top-10 z-50 flex justify-center items-center text-black my-12 text-base`}>
         <div className={`hidden md:flex bg-gray-300 rounded-full shadow-lg px-10 py-5 pl-28 cursor-pointer hover:shadow-black delay-75`}>
             <NavbarList />
         </div>

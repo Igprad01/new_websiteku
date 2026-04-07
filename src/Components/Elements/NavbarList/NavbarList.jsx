@@ -1,6 +1,3 @@
-import React from "react";
-
-
 const NavbarList = ({styling}) => {
     const List = [
         {name: 'Home', link:'#home'},
@@ -12,11 +9,11 @@ const NavbarList = ({styling}) => {
     return (
         <ul className={`mr-10 ${styling}`}>
             {List.map((list) => (
-                <a href={list.link} className={`mr-10 hover:text-white delay-100 capitalize`}>{list.name}</a>
+                <a key={list.name} href={list.link} className={`mr-10 hover:text-white delay-100 capitalize`}>{list.name}</a>
             ))}
         </ul>
     )
-}
+}   
 
 export default NavbarList
 

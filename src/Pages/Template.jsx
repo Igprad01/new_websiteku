@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from './../Components/Layouts/Navbar/Navbar';
 import "@fontsource/montserrat"; // Defaults to weight 400
 import "@fontsource/montserrat/400.css"; // Specify weight
@@ -12,18 +12,26 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Skill from '../Components/Layouts/Section_skill/Skill';
 
-const Template = () => (
+const Template = () => {
+    useEffect(() => {
+        Aos.init({
+            once: false,
+            duration: 1000,
+        });
+    }, []);
 
-    <body className="font-montserrat">
-        <Navbar />
-        <HeroSection />
-        <About />
-        <Section_Project />
-        <Sertifikat />
-        <Skill />
-        <Footer />
-    </body>
-)
+    return (
+        <main className="font-montserrat overflow-hidden">
+            <Navbar />
+            <HeroSection />
+            <About />
+            <Section_Project />
+            <Sertifikat />
+            <Skill />
+            <Footer />
+        </main>
+    );
+};
 
 
 export default Template
