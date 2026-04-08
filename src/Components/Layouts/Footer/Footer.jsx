@@ -21,11 +21,6 @@ const Footer = () => {
                 <p className="text-slate-400 text-sm sm:text-base max-w-xl mb-8">
                     Atau membicarakan peluang kerja sama untuk mewujudkan project impian Anda? Jangan ragu untuk menghubungi saya.
                 </p>
-                
-                <a href="igustiputra99@gmail.com" className="btn btn-primary rounded-full px-10 text-white shadow-lg shadow-primary/20 hover:-translate-y-1 transition-transform mb-12">
-                    Kirim Pesan
-                </a>
-
                 <div className="flex flex-col items-center border-t border-slate-800 w-full pt-8">
                     <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm sm:text-base">
                         <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">LinkedIn</a>

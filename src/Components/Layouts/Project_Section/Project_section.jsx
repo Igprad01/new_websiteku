@@ -39,6 +39,3 @@ const Section_Project = () => {
 };
 
 export default Section_Project;
-
-//  kurang responsif pada card button
-// kurang button pada certificate 
