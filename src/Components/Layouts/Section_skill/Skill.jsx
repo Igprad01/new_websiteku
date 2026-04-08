@@ -6,14 +6,17 @@ import "aos/dist/aos.css";
 const Skill = () => {
 
     const cardSkill = [
-        {id:1, img:'/Logo/react-js.png', alt:'React JS'},
-        {id:2, img:'/Logo/tailwinds.png', alt:'Tailwind CSS'},
-        {id:3, img:'/Logo/laragon.png', alt:'Laragon'},
-        {id:4, img:'/Logo/wordpress.png', alt:'WordPress'},
-        {id:5, img:'/Logo/sheet.png', alt:'Spreadsheet'},
-        {id:6, img:'/Logo/looker-studio.png', alt:'Looker Studio'},
-        {id:7, img:'/Logo/SQL.png', alt:'SQL Database'},
-        {id:8, img:'/Logo/Vue.js.png', alt:'Vue JS'},
+        {id:1, img:'/Logo/laravel.png', alt:'Laravel'},
+        {id:2, img:'/Logo/nextjs.png', alt:'Next JS'},
+        {id:3, img:'/Logo/react-js.png', alt:'React JS'},
+        {id:4, img:'/Logo/Vue.js.png', alt:'Vue JS'},
+        {id:5, img:'/Logo/tailwinds.png', alt:'Tailwind CSS'},
+        {id:7, img:'/Logo/SQL.png', alt:'MySQL'},
+        {id:9, img:'/Logo/wordpress.png', alt:'WordPress'},
+        {id:10, img:'/Logo/sheet.png', alt:'Excel'},
+        {id:11, img:'/Logo/looker-studio.png', alt:'Looker Studio'},
+        {id:12, img:'/Logo/C.png', alt:'C'},
+        {id:13, img:'/Logo/arduino.png', alt:'Arduino Uno'},
     ]
 
     useEffect(()=> {
