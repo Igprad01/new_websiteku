@@ -18,6 +18,8 @@ const Section_Project = () => {
         tailwind: { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
         excel: { name: 'Excel', icon: '/img/excel.png' },
         lookerstudio: { name: 'Looker Studio', icon: '/img/lookerstudio.svg' },
+        figma: { name: 'Figma', icon: '/img/figma.png' },
+
     };
     const daisyuiIcon = 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg';
 
@@ -26,7 +28,8 @@ const Section_Project = () => {
         {id:2, title:'Digital Idul Fitri & THR', teks:'Website seru-seruan buat ngucapin Selamat Idul Fitri. Nggak cuma banner ucapan biasa, di sini juga ada tombol rahasia yang isinya link Dana Kaget buat bagi-bagi THR beneran ke teman-teman!',img:'/img/idulFitri.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://idulfitri-nine.vercel.app/', stack: [stacksInfo.react, stacksInfo.tailwind, {name: 'DaisyUI', icon: daisyuiIcon}]},
          {id:3, title:'Visualisasi Peta Persebaran Gempa Di Jawa Barat ', teks:'Sebuah Project kelompok bersama temen-temen kuliah dengan tema visualisasi data gempa di Jawa Barat menggunakan data dump dari kaggle.com', img:'/img/peta.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://datastudio.google.com/s/qA_-MnGtm-Q', stack: [stacksInfo.lookerstudio, stacksInfo.excel]},
         {id:4, title:'App Patungan Makan', teks:'Suka pusing kalau habis nongkrong tapi bingung ngitung patungan? Nah, web app sederhana ini saya bikin khusus buat ngitung tagihan makan/nongkrong bareng supaya lebih cepat, gampang, dan adil.', img:'/img/Apppatungan.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://patunganapp.vercel.app/', stack: [stacksInfo.vue, stacksInfo.tailwind]},
-        {id:5, title:'Auto Random Color', teks:'Proyek iseng untuk belajar eksplorasi logika Javascript. Website ini langsung ngasih kombinasi warna-warna acak yang unik di layar cuma bermodal sekali klik. Simpel, tapi seru buat dilihat.', img:'/img/randomColor.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://auto-random-color.vercel.app/', stack: [stacksInfo.html, stacksInfo.css, stacksInfo.js]},
+         {id:5, title:'Slicing Desain', teks:'website dibuat ulang dengan desain yang lebih modern dan responsif dengan sumber dari desain yang saya dapat dari dribble', img:'/img/slicingdesain.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://slicing-website-two.vercel.app/', stack: [stacksInfo.vue, stacksInfo.tailwind]},
+        {id:6, title:'Auto Random Color', teks:'Proyek iseng untuk belajar eksplorasi logika Javascript. Website ini langsung ngasih kombinasi warna-warna acak yang unik di layar cuma bermodal sekali klik. Simpel, tapi seru buat dilihat.', img:'/img/randomColor.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://auto-random-color.vercel.app/', stack: [stacksInfo.html, stacksInfo.css, stacksInfo.js]},
     ]
 
     return (
