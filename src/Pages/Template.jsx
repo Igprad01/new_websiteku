@@ -24,8 +24,8 @@ const Template = () => {
         <main className="font-montserrat overflow-hidden">
             <Navbar />
             <HeroSection />
-            <About />
             <Section_Project />
+            <About />
             <Sertifikat />
             <Skill />
             <Footer />
