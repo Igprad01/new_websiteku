@@ -25,8 +25,8 @@ const Template = () => {
             <Navbar />
             <HeroSection />
             <Section_Project />
+             <Sertifikat />
             <About />
-            <Sertifikat />
             <Skill />
             <Footer />
         </main>

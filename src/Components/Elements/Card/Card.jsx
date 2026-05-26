@@ -8,7 +8,9 @@ const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat,sty
     return (
         <div className={`border box-border px-3 py-6 bg-transparent flex flex-col h-full rounded-md shadow-sm hover:shadow-md transition-shadow`}>
             <Heading1 Text={Title} Styling={styleHeading} />
-            <Image src={Imgsrc} alt={Ket} styleImg={styleImage}/>
+            {Imgsrc && (
+                <Image src={Imgsrc} alt={Ket} styleImg={styleImage}/>
+            )}
             <Kalimat teks={Teks} Styling={StyleKalimat}/>
             {stack && stack.length > 0 && (
                 <div className="flex flex-wrap items-center justify-center gap-3 mt-2 mb-4">
