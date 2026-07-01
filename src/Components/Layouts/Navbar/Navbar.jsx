@@ -13,7 +13,7 @@ const Navbar = () => {
             <NavbarList />
         </div>
         <div className={`md:hidden flex justify-end items-end w-full pr-6`}>
-            <button onClick={hamburger} >
+            <button onClick={hamburger} aria-label="Toggle navigation menu">
                 <svg viewBox="0 0 100 80" width="20" height="20">
                   <rect width="100" height="20" fill="white"></rect>
                   <rect y="30" width="100" height="20" fill="white"></rect>

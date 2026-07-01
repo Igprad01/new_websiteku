@@ -29,15 +29,15 @@ const HeroSection= () => {
           <div>
           <Kalimat teks = 'Full Stack Developer & Data Analyst dengan 3 tahun pengalaman dalam Laravel dan React Js. Ahli dalam System Analysis dan Pengolahan Data Excel, Python dan Looker Studio. Memiliki latar belakang Trainne Robotika yang memperkuat logika teknis, serta terbiasa bekerja kolaboratif untuk solusi teknologi yang inovatif. ' Styling={`font-italic text-xl text-justify sm:text-lg text-start lg:text-xl`}/>
          </div>
-         <div className={`flex flex-row text-center mt-5 gap-5`}>
-                    <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} />
+          <div className={`flex flex-row text-center mt-5 gap-5`}>
+                    <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} decoding="async" width="40" height="40" />
                     </a>
-                    <a href="https://x.com/IPradwi" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} />
+                    <a href="https://x.com/IPradwi" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10`} decoding="async" width="40" height="40" />
                     </a>
-                    <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Github" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+                    <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Github" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" decoding="async" width="40" height="40" />
                     </a>
                     </div>       
             </div>

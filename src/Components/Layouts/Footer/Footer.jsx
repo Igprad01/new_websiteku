@@ -11,9 +11,13 @@ const Footer = () => {
         <footer className="bg-slate-900 text-white py-16 border-t-2 border-slate-800">
             <div data-aos="fade-up" className="container mx-auto px-4 flex flex-col items-center text-center">
                 <img 
-                    src="/img/fotoProfile.jpg" 
+                    src="/img/fotoProfile.webp" 
                     alt="I Gusti Bagus Putra Pradwi" 
                     className="w-20 h-20 rounded-full mb-6 border-2 border-primary object-cover shadow-sm" 
+                    loading="lazy"
+                    decoding="async"
+                    width="80"
+                    height="80"
                 />
                 <h2 className="text-2xl sm:text-3xl font-bold leading-tight mb-4 capitalize">
                     Mau nongki hingga berdiskusi ide seru?

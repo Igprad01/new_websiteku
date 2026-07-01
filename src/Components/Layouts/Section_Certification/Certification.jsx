@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Card from "../../Elements/Card/Card";
-import Heading1 from "../../Elements/Heading1/Heading1";
+import Heading2 from "../../Elements/Heading2/Heading2";
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -22,7 +22,7 @@ const Sertifikat = () => {
 
     return (
         <div data-aos="fade-up" className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`} id="sertifikasi">
-           <Heading1 Text={`Certification`} Styling={`text-center text-2xl capitalize mb-10 sm:text-3xl md:text-4xl lg:text-5xl`}/>
+           <Heading2 Text={`Certification`} Styling={`text-center text-2xl capitalize mb-10 sm:text-3xl md:text-4xl lg:text-5xl`}/>
             <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3`}>
                 {Kartu.map((card)=>(
                     <Card key={card.id} Title={card.judul} Teks={card.kalimat} styleHeading={`font-bold mt-4 mb-3 text-center text-xl sm:text-lg md:text-xl`} StyleKalimat={`mt-3 mb-4 text-justify text-slate-300 text-sm sm:text-base md:text-base`} styleButton={card.buttonstyle} textbutton={card.kalimatButton} Link={card.link} />

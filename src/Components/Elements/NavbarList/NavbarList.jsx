@@ -7,9 +7,11 @@ const NavbarList = ({styling}) => {
         {name: 'Skill', link:'#skill'}
     ]
     return (
-        <ul className={`mr-10 ${styling}`}>
+        <ul className={`flex mr-10 ${styling ? styling : 'flex-row'}`}>
             {List.map((list) => (
-                <a key={list.name} href={list.link} className={`mr-10 hover:text-white delay-100 capitalize`}>{list.name}</a>
+                <li key={list.name}>
+                    <a href={list.link} className={`mr-10 hover:text-white delay-100 capitalize`}>{list.name}</a>
+                </li>
             ))}
         </ul>
     )

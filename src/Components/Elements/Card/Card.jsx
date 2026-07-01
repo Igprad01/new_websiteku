@@ -1,4 +1,3 @@
-import Heading1 from "../Heading1/Heading1";
 import Kalimat from "../Paragraph/Paragraph";
 import Image from "../../image/Image";
 
@@ -7,9 +6,9 @@ const Card = ({Teks,Title,styleHeading,Imgsrc, Ket, styleImage, StyleKalimat,sty
     
     return (
         <div className={`border box-border px-3 py-6 bg-transparent flex flex-col h-full rounded-md shadow-sm hover:shadow-md transition-shadow`}>
-            <Heading1 Text={Title} Styling={styleHeading} />
+            <h3 className={styleHeading}>{Title}</h3>
             {Imgsrc && (
-                <Image src={Imgsrc} alt={Ket} styleImg={styleImage}/>
+                <Image src={Imgsrc} alt={Ket || Title} styleImg={styleImage}/>
             )}
             <Kalimat teks={Teks} Styling={StyleKalimat}/>
             {stack && stack.length > 0 && (
