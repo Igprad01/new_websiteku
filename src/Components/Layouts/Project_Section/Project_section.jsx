@@ -37,13 +37,14 @@ const Section_Project = () => {
         bootstrap: { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg' },
         mysql: { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
         python: { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
-
+        nextjs: { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg' },
+        telegram: { name: 'Telegram Bot', icon: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg' },
     };
     const daisyuiIcon = 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg';
 
     const card = [
-       
-        {id:2, title:'Catatanku', teks:'app catatan sederhana merupakan project pertama saya menggunakan laravel dan my sql digunakan untuk menyimpan catatan pribadi', img:'/img/catatanku.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'#', stack: [stacksInfo.laravel, stacksInfo.mysql, stacksInfo.php]},
+        { id: 0, title: 'Financial Bot', teks: 'Bot Telegram untuk pencatatan keuangan otomatis yang terintegrasi dengan database untuk memudahkan manajemen finansial.', img: '/img/financialku.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton: 'Lihat Project', link: 'https://t.me/keuanganpribadiku_bot', stack: [stacksInfo.telegram, stacksInfo.nextjs, stacksInfo.mysql] },
+        {id:1, title:'Catatanku', teks:'app catatan sederhana merupakan project pertama saya menggunakan laravel dan my sql digunakan untuk menyimpan catatan pribadi', img:'/img/catatanku.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'#', stack: [stacksInfo.laravel, stacksInfo.mysql, stacksInfo.php]},
         {id:3, title:'To Do List', teks:'aplikasi to do list sederhana merupakan project pertama saya menggunakan laravel dan my sql digunakan untuk menyimpan catatan pribadi', img:'/img/todolist.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'#', stack: [stacksInfo.laravel, stacksInfo.mysql, stacksInfo.php]},
          {id:4, title:'Sistem Parkir Mall', teks:'aplikasi sistem parkir mall merupakan project pertama saya menggunakan laravel dan my sql digunakan untuk menyimpan catatan pribadi', img:'/img/sistemparkirmall.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'#', stack: [stacksInfo.laravel, stacksInfo.mysql, stacksInfo.php]},
         {id:5, title:'Digital Idul Fitri & THR', teks:'Website seru-seruan buat ngucapin Selamat Idul Fitri. Nggak cuma banner ucapan biasa, di sini juga ada tombol rahasia yang isinya link Dana Kaget buat bagi-bagi THR beneran ke teman-teman!',img:'/img/idulFitri.png', stylingklik:'btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide', kalimatButton:'Lihat Project', link:'https://idulfitri-nine.vercel.app/', stack: [stacksInfo.react, stacksInfo.tailwind, {name: 'DaisyUI', icon: daisyuiIcon}]},
