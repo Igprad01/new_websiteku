@@ -1,39 +1,37 @@
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const Footer = () => {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
-
     return (
-        <footer className="bg-slate-900 text-white py-16 border-t-2 border-slate-800">
-            <div data-aos="fade-up" className="container mx-auto px-4 flex flex-col items-center text-center">
-                <img 
-                    src="/img/fotoProfile.webp" 
-                    alt="I Gusti Bagus Putra Pradwi" 
-                    className="w-20 h-20 rounded-full mb-6 border-2 border-primary object-cover shadow-sm" 
-                    loading="lazy"
-                    decoding="async"
-                    width="80"
-                    height="80"
-                />
-                <h2 className="text-2xl sm:text-3xl font-bold leading-tight mb-4 capitalize">
-                    Mau nongki hingga berdiskusi ide seru?
-                </h2>
-                <p className="text-slate-400 text-sm sm:text-base max-w-xl mb-8">
-                    Atau membicarakan peluang kerja sama untuk mewujudkan project impian Anda? Jangan ragu untuk menghubungi saya.
-                </p>
-                <div className="flex flex-col items-center border-t border-slate-800 w-full pt-8">
-                    <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm sm:text-base">
-                        <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
-                        <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a>
-                    </div>
-                
-                    <p className="text-slate-500 text-xs sm:text-sm">
-                        © {new Date().getFullYear()} I Gusti Bagus Putra Pradwi. All Rights Reserved.
+        <footer id="contact" className="border-t border-white/5">
+            <div className="container mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28">
+                <div className="max-w-2xl">
+                    <p className="text-[12px] uppercase tracking-[0.35em] text-[#c8a24b] mb-6">
+                        Kontak
                     </p>
+                    <h2 className="font-display text-3xl sm:text-5xl text-[#f2f0ea] leading-tight">
+                        Ada project atau peluang yang ingin dibicarakan?
+                    </h2>
+                    <p className="mt-5 text-[15px] text-[#8a8a8a] leading-relaxed">
+                        Silakan kirim pesan lewat email. Saya biasanya membalas dalam satu hari kerja.
+                    </p>
+                    <a
+                        href="mailto:putrapradwi01@gmail.com"
+                        className="mt-10 inline-flex items-center gap-3 group text-lg font-medium text-[#f2f0ea]"
+                    >
+                        putrapradwi01@gmail.com
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-[#c8a24b] transition-transform group-hover:translate-x-1 duration-300">
+                            <path d="M7 17L17 7M17 7H8M17 7v9" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div className="mt-20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/5">
+                    <p className="text-[12px] text-[#55524b]">
+                        © {new Date().getFullYear()} I Gusti Bagus Putra Pradwi.
+                    </p>
+                    <div className="flex gap-6 text-[12px] uppercase tracking-[0.2em]">
+                        <a href="https://www.linkedin.com/in/putrapradwi/" target="_blank" rel="noopener noreferrer" className="text-[#8a8a8a] hover:text-[#c8a24b] transition-colors">LinkedIn</a>
+                        <a href="https://github.com/Igprad01" target="_blank" rel="noopener noreferrer" className="text-[#8a8a8a] hover:text-[#c8a24b] transition-colors">GitHub</a>
+                        <a href="https://x.com/IPradwi" target="_blank" rel="noopener noreferrer" className="text-[#8a8a8a] hover:text-[#c8a24b] transition-colors">Twitter</a>
+                    </div>
                 </div>
             </div>
         </footer>

@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import Template from './Pages/Template'
-import About from './Components/Layouts/About_Me/About'
 
 const route = createBrowserRouter ([
   {

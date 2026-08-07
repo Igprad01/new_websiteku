@@ -7,12 +7,24 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montserrat:['Montserrat', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+        body: ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        ink: '#0b0b0d',
+        paper: '#f6f4ef',
+        accent: '#c8a24b',
+      },
+      keyframes: {
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(14px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fade-up 0.7s ease-out both',
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["dark"],
-  },
+  plugins: [],
 }

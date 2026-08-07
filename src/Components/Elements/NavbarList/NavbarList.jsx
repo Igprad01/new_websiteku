@@ -1,22 +1,28 @@
-const NavbarList = ({styling}) => {
+const NavbarList = ({ styling = "flex items-center gap-7", active, onNavigate }) => {
     const List = [
-        {name: 'Home', link:'#home'},
-        {name: 'About', link:'#about'},
-        {name: 'Project', link:'#project'},
-        {name: 'Certification', link:'#sertifikasi'},
-        {name: 'Skill', link:'#skill'}
-    ]
+        { name: 'Beranda', link: '#home', id: 'home' },
+        { name: 'Tentang', link: '#about', id: 'about' },
+        { name: 'Project', link: '#project', id: 'project' },
+        { name: 'Sertifikat', link: '#sertifikasi', id: 'sertifikasi' },
+        { name: 'Keahlian', link: '#skill', id: 'skill' },
+    ];
     return (
-        <ul className={`flex mr-10 ${styling ? styling : 'flex-row'}`}>
-            {List.map((list) => (
-                <li key={list.name}>
-                    <a href={list.link} className={`mr-10 hover:text-white delay-100 capitalize`}>{list.name}</a>
+        <ul className={styling}>
+            {List.map((item) => (
+                <li key={item.id}>
+                    <a
+                        href={item.link}
+                        onClick={() => onNavigate && onNavigate()}
+                        className={`text-[13px] uppercase tracking-[0.18em] transition-colors duration-300 ${
+                            active === item.id ? "text-[#c8a24b]" : "text-[#8a8a8a] hover:text-[#f2f0ea]"
+                        }`}
+                    >
+                        {item.name}
+                    </a>
                 </li>
             ))}
         </ul>
-    )
-}   
+    );
+};
 
-export default NavbarList
-
-// const List = ['Home','About','Project','Certification'];
+export default NavbarList;
