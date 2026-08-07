@@ -138,7 +138,7 @@ const Section_Project = () => {
       stylingklik: "btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide",
       kalimatButton: "Lihat Project",
       link: "https://landing-page-project-client-tugas-kuliah.vercel.app/",
-      stack: [stacksInfo.HTML, stacksInfo.bootstrap, stacksInfo.js],
+      stack: [stacksInfo.html, stacksInfo.bootstrap, stacksInfo.js],
     },
     {
       id: 7,
