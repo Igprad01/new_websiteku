@@ -1,5 +1,5 @@
 // Section_Project.js
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Card from "../../Elements/Card/Card";
 import Heading2 from "../../Elements/Heading2/Heading2";
 import Aos from "aos";
@@ -10,24 +10,6 @@ const Section_Project = () => {
     Aos.init({ duration: 2000 });
   });
 
-  const sliderRef = useRef(null);
-  const slideLeft = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: -window.innerWidth / 2,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const slideRight = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: window.innerWidth / 2,
-        behavior: "smooth",
-      });
-    }
-  };
   const stacksInfo = {
     html: {
       name: "HTML",
@@ -85,6 +67,10 @@ const Section_Project = () => {
       icon: "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
     },
     arduino: { name: "Arduino", icon: "/Logo/arduino.webp" },
+    c: {
+      name: "C++",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    },
   };
   const daisyuiIcon =
     "https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg";
@@ -146,6 +132,16 @@ const Section_Project = () => {
     },
     {
       id: 6,
+      title: "Landing Page",
+      teks: "Website Landing Page project client tugas kuliah",
+      img: "/img/landing_page_burger.webp",
+      stylingklik: "btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide",
+      kalimatButton: "Lihat Project",
+      link: "https://landing-page-project-client-tugas-kuliah.vercel.app/",
+      stack: [stacksInfo.HTML, stacksInfo.bootstrap, stacksInfo.js],
+    },
+    {
+      id: 7,
       title: "Visualisasi Peta Persebaran Gempa Di Jawa Barat ",
       teks: "Sebuah Project kelompok bersama temen-temen kuliah dengan tema visualisasi data gempa di Jawa Barat menggunakan data dump dari kaggle.com",
       img: "/img/peta.webp",
@@ -155,7 +151,7 @@ const Section_Project = () => {
       stack: [stacksInfo.lookerstudio, stacksInfo.excel],
     },
     {
-      id: 7,
+      id: 8,
       title: "App Patungan Makan",
       teks: "Suka pusing kalau habis nongkrong tapi bingung ngitung patungan? Nah, web app sederhana ini saya bikin khusus buat ngitung tagihan makan/nongkrong bareng supaya lebih cepat, gampang, dan adil.",
       img: "/img/Apppatungan.webp",
@@ -166,7 +162,6 @@ const Section_Project = () => {
     },
     {
       id: 8,
-      title: "Slicing Landing Page Manajemen Kontrak",
       teks: "website dibuat ulang dengan desain yang lebih modern dan responsif dengan sumber dari desain yang saya dapat dari dribble",
       img: "/img/slicingdesain.webp",
       stylingklik: "btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide",
@@ -202,93 +197,47 @@ const Section_Project = () => {
       stylingklik: "btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide",
       kalimatButton: "Lihat Repository",
       link: "https://github.com/Igprad01/kasir-Sederhana-CPP",
-      stack: [stacksInfo.c++],
+      stack: [stacksInfo.c],
     },
     {
       id: 12,
-      title: "Program Sistem Pemesanan Kereta Api",
-      teks: "Implementasi sistem kasir menggunakan bahasa pemrograman c++",
-      img: "/img/kasir_sederhana.webp",
+      title: "Program Pemesanan Tiket Kereta Api",
+      teks: "Implementasi sistem pemesanan tiket kereta api menggunakan bahasa pemrograman c++",
+      img: "/img/kereta_api.webp",
       stylingklik: "btn btn-outline btn-primary btn-sm sm:btn-md lg:btn-wide",
       kalimatButton: "Lihat Repository",
-      link: "https://github.com/Igprad01/kasir-Sederhana-CPP",
-      stack: [stacksInfo.c++],
+      link: "https://github.com/Igprad01/Railway-Ticket-Booking-System-CPP",
+      stack: [stacksInfo.c],
     },
   ];
 
   return (
     <div
       data-aos="fade-up"
-      className={`container mx-auto px-4 py-8  sm:px-6 lg:px-8`}
+      className={`container mx-auto px-4 py-8 sm:px-6 lg:px-8`}
       id="project"
     >
       <Heading2
         Text={`Project`}
         Styling={`text-center text-2xl capitalize mb-10 sm:text-3xl md:text-4xl lg:text-5xl`}
       />
-      <div className="relative group">
-        <button
-          onClick={slideLeft}
-          className="absolute left-0 sm:left-2 lg:-left-4 top-1/2 -translate-y-1/2 z-10 bg-slate-800/80 hover:bg-primary hover:text-white p-2 sm:p-3 rounded-full text-slate-300 shadow-xl backdrop-blur-sm transition-all opacity-70 hover:opacity-100 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2.5}
-            stroke="currentColor"
-            className="w-5 h-5 sm:w-6 sm:h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {card.map((card) => (
+          <div key={card.id} className="h-full">
+            <Card
+              Title={card.title}
+              Teks={card.teks}
+              Imgsrc={card.img}
+              styleImage={`w-full h-44 sm:h-52 object-contain mx-auto rounded-xl`}
+              styleHeading={`font-bold mt-4 mb-3 text-center text-lg sm:text-xl`}
+              StyleKalimat={`mt-3 mb-4 text-justify text-slate-300 text-sm`}
+              styleButton={card.stylingklik}
+              textbutton={card.kalimatButton}
+              Link={card.link}
+              stack={card.stack}
             />
-          </svg>
-        </button>
-        <button
-          onClick={slideRight}
-          className="absolute right-0 sm:right-2 lg:-right-4 top-1/2 -translate-y-1/2 z-10 bg-slate-800/80 hover:bg-primary hover:text-white p-2 sm:p-3 rounded-full text-slate-300 shadow-xl backdrop-blur-sm transition-all opacity-70 hover:opacity-100 sm:opacity-0 group-hover:opacity-100 flex items-center justify-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2.5}
-            stroke="currentColor"
-            className="w-5 h-5 sm:w-6 sm:h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-            />
-          </svg>
-        </button>
-        <div
-          ref={sliderRef}
-          className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 pb-8 pt-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
-        >
-          {card.map((card) => (
-            <div
-              key={card.id}
-              className="snap-center shrink-0 w-[90vw] sm:w-[60vw] md:w-[45vw] lg:w-[35vw]"
-            >
-              <Card
-                Title={card.title}
-                Teks={card.teks}
-                Imgsrc={card.img}
-                styleImage={`w-full h-52 sm:h-64 object-cover object-top mx-auto rounded-xl`}
-                styleHeading={`font-bold mt-4 mb-3 text-center text-xl sm:text-xl md:text-2xl`}
-                StyleKalimat={`mt-3 mb-4 text-justify text-slate-300 text-sm sm:text-base md:text-lg`}
-                styleButton={card.stylingklik}
-                textbutton={card.kalimatButton}
-                Link={card.link}
-                stack={card.stack}
-              />
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
